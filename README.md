@@ -1,17 +1,19 @@
-# mcp-packagist
+# @pipeworx/packagist
 
-Packagist MCP — PHP / Composer package registry
+Packagist MCP — main Composer (PHP) package registry. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Search Packagist by free text. Optionally filter by package type and tags. |
-| `get_package` | Fetch full package metadata including all versions. |
-| `list_versions` | List all versions of a package with release dates. |
-| `package_stats` | Download counts (total, monthly, daily) + dependents count. |
+- `search(query, type?, tags?, page?, per_page?)`
+- `get_package(name)` — full metadata + versions
+- `list_versions(name)` — version timeline
+- `package_stats(name)` — downloads + dependents
+
+## Data source
+
+`https://packagist.org/` — public REST + JSON.
 
 ## Quick Start
 
@@ -27,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
