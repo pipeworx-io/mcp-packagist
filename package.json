@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-packagist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Packagist MCP — PHP / Composer package registry",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-04646a390bcbd4dc6e09ef22077fe0f85f0d3aaa25a5c449707ca5d76989c9a5",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-76f018ebb498660931ec6bd3e860ffa37ea7c20333408120dd1e1db84069cc44",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
