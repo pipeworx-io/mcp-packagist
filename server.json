@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/packagist",
   "title": "Packagist",
   "description": "Packagist MCP — PHP / Composer package registry",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/packagist",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-packagist",

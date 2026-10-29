@@ -1,0 +1,82 @@
+[
+  {
+    "name": "search",
+    "description": "Search the Packagist PHP/Composer registry by free text with optional type (e.g. library, symfony-bundle) and tag filters. Returns package names, descriptions, download counts, and latest versions.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text — package name / description"
+        },
+        "type": {
+          "type": "string",
+          "description": "composer-plugin | library | symfony-bundle | wordpress-plugin | ..."
+        },
+        "tags": {
+          "type": "string",
+          "description": "Comma-separated tags"
+        },
+        "page": {
+          "type": "number",
+          "description": "1-based page"
+        },
+        "per_page": {
+          "type": "number",
+          "description": "1-15 (default 15, API max)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_package",
+    "description": "Full Packagist registry record for one PHP/Composer package named in vendor/package form, e.g. symfony/console. Returns description, repository URL, maintainers, license, type, download and favers counts, and every published version with its requires, autoload, and dist details. Answers what a Composer package is, who maintains it, and what each release declares.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Package name in \"vendor/package\" form"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "list_versions",
+    "description": "Release history of one PHP/Composer package on the Packagist registry, given a vendor/package name such as symfony/console. Returns every published version string paired with its release timestamp, plus a total count. Answers which versions of a Composer package exist and when the latest one shipped.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "vendor/package"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "package_stats",
+    "description": "Download counts (total, monthly, daily) + dependents count.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "vendor/package"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+]
