@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-packagist",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Packagist MCP — PHP / Composer package registry",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "packagist",
     "gatewaySlug": "packagist",
-    "sourceHash": "v1-f1f1026622380d3c79b5c59f44f5749c51358f1dc11f8f3fa19c7a5d973d138e",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-ff6e0e916d86b62e521cbbbb8e949bbfc886891247711c73164d2513e4a46576",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
